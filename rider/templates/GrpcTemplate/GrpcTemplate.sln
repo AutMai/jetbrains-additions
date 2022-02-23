@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcService", "GrpcService\GrpcService.csproj", "{BAE8252C-B5A0-486A-9616-1D9A21B34BEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoShared", "ProtoShared\ProtoShared.csproj", "{841C1D24-768B-4C4D-9497-9066ED1D9871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcClient", "GrpcClient\GrpcClient.csproj", "{9EEA4FD0-2BEE-408F-8FE1-7125DC2C3CAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAE8252C-B5A0-486A-9616-1D9A21B34BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE8252C-B5A0-486A-9616-1D9A21B34BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE8252C-B5A0-486A-9616-1D9A21B34BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE8252C-B5A0-486A-9616-1D9A21B34BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841C1D24-768B-4C4D-9497-9066ED1D9871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841C1D24-768B-4C4D-9497-9066ED1D9871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841C1D24-768B-4C4D-9497-9066ED1D9871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841C1D24-768B-4C4D-9497-9066ED1D9871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EEA4FD0-2BEE-408F-8FE1-7125DC2C3CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EEA4FD0-2BEE-408F-8FE1-7125DC2C3CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EEA4FD0-2BEE-408F-8FE1-7125DC2C3CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EEA4FD0-2BEE-408F-8FE1-7125DC2C3CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

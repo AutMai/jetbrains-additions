@@ -1,0 +1,25 @@
+{
+  "author": "Sebastian Huber",
+  "name": "GrpcClientServer",
+  "description": "GrpcService, GrpcClient and ProtoShared ClassLib",
+  "identity": "GrpcClientServer.1.0",
+  "shortName": "GrpcClientServer",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "GrpcClientServer",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net6.0"
+    }
+  }
+}
