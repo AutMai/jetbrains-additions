@@ -1,0 +1,150 @@
+<templateSet group="mongo-aggregate">
+  <template name="max" value="{&#10;    $group: {&#10;        _id: &quot;$projectFunding&quot;,&#10;        myProjects: {$push: &quot;$$$ROOT&quot;}&#10;&#9;}&#10;}, {&#10;    $sort: {_id: -1}&#10;}, {&#10;    $limit: 1&#10;}, {&#10;    $unwind: &quot;$myProjects&quot;&#10;}, {&#10;    $replaceRoot: {&#10;        newRoot: &quot;$myProjects&quot;&#10;    }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$reduce" value="$reduce: {&#10;    input: $ar$,&#10;    initialValue: $initVal$,&#10;    in: {&#10;    &#9;&#10;    }&#10;}" description="array to single value (vgl. forloop)" toReformat="false" toShortenFQNames="true">
+    <variable name="ar" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="initVal" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$lookup" value="$lookup: {&#10;    from: $collectionToJoin$,&#10;    localField: $localField$,&#10;    foreignField: $foreignField$,&#10;    as: $outputArray$&#10;}" description="(join)" toReformat="false" toShortenFQNames="true">
+    <variable name="collectionToJoin" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="localField" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="foreignField" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="outputArray" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$filter" value="$filter: {&#10;    input: $ARRAY$,&#10;    as: $VAR_NAME$,&#10;    cond: {&#10;    &#9;&#10;    }&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="ARRAY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$cond" value="$cond: [ {}, &lt;true-case&gt;, &lt;false-case&gt; ]" description="(if)" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$switch" value="$switch: {&#10;    branches: [&#10;        { case: {}, then: &lt;expression&gt; }&#10;    ],&#10;    default: &lt;expression&gt;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$cmp" value="$cmp: [ &lt;expression1&gt;, &lt;expression2&gt; ]" description="-1: first value less than second, 1: first value greater than second, 0 values are equivalent" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$map" value="$map: {&#10;    input: $input$,&#10;    as: $varName$,&#10;    in: {&#10;    &#9;&#10;    }&#10;}" description="Applies an expression to each item in an array and returns an array with the applied results." toReformat="false" toShortenFQNames="true">
+    <variable name="input" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="varName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$let" value="$let: {&#10;    vars: { &lt;var1&gt;: &lt;expression&gt;, ... },&#10;    in: {&#10;    &#10;    }&#10;}" description="Binds variables for use in the specified expression, and returns the result of the expression." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$replaceRoot" value="$replaceRoot: {&#10;    newRoot: $newRoot$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="newRoot" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$group" value="$group: {&#10;    _id: $expr$&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="expr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="$mergeObjects" value="$mergeObjects: [ &lt;document1&gt;, &lt;document2&gt;, ... ]" description="Combines multiple documents into a single document." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="agg" value="db.$COLL$.aggregate([&#10;{&#10;&#10;}&#10;]);&#10;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="COLL" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="goalsEval" value="{&#10;&#9;$addFields: {&#10;        teams: {&#10;            $map: {&#10;                input: &quot;$teams&quot;,&#10;                as: &quot;team&quot;,&#10;                in: {&#10;                    $mergeObjects: [&quot;$$$team&quot;,&#10;                        {&#10;                            goals: {&#10;                            &#9;$size: {&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;$filter: {&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;input: &quot;$$$team.events&quot;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;as: &quot;event&quot;,&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;cond: {&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;$eq: [&quot;$$$event.eventType&quot;, &quot;GOAL&quot;]&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;}&#10;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;}&#10;                            &#9;}&#10;                            }&#10;                        }&#10;                    ]&#10;                }&#10;            }&#10;        }&#10;    }&#10;}, {&#10;&#9;$addFields: {&#10;&#9;&#9;MinGoals: {&#10;&#9;&#9;&#9;$min: &quot;$teams.goals&quot;&#10;&#9;&#9;},&#10;&#9;&#9;MaxGoals: {&#10;&#9;&#9;&#9;$max: &quot;$teams.goals&quot;&#10;&#9;&#9;}&#10;&#9;}&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="winnerEval" value="$switch: {&#10;&#9;branches: [&#10;&#9;&#9;{ case: {$eq: [&quot;$MinGoals&quot;, &quot;$MaxGoals&quot;]}, then: &quot;tie&quot;},&#10;&#9;&#9;{ case: {$eq: [&quot;$$$this.goals&quot;, &quot;$MaxGoals&quot;]}, then: &quot;winner&quot; },&#10;&#9;&#9;{ case: {$eq: [&quot;$$$this.goals&quot;, &quot;$MinGoals&quot;]}, then: &quot;looser&quot; }&#10;&#9;],&#10;&#9;default: &quot;&quot;&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="SQL" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+</templateSet>
