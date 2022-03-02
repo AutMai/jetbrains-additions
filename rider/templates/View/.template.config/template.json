@@ -1,0 +1,25 @@
+{
+  "author": "Sebastian Huber",
+  "name": "View",
+  "description": "View",
+  "identity": "View.1.0",
+  "shortName": "View",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "View",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net6.0"
+    }
+  }
+}

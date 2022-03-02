@@ -1,0 +1,25 @@
+{
+  "author": "Sebastian Huber",
+  "name": "GrpcClient",
+  "description": "GrpcClient",
+  "identity": "GrpcClient.1.0",
+  "shortName": "GrpcClient",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "GrpcClient",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net6.0"
+    }
+  }
+}

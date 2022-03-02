@@ -1,14 +1,14 @@
 {
   "author": "Sebastian Huber",
-  "name": "GrpcClientServer",
-  "description": "GrpcService, GrpcClient and ProtoShared ClassLib",
-  "identity": "GrpcClientServer.1.0",
-  "shortName": "GrpcClientServer",
+  "name": "ProtoShared",
+  "description": "ProtoShared",
+  "identity": "ProtoShared.1.0",
+  "shortName": "ProtoShared",
   "tags": {
     "language": "C#",
     "type": "solution"
   },
-  "sourceName": "GrpcClientServer",
+  "sourceName": "ProtoShared",
   "symbols": {
     "Framework": {
       "type": "parameter",

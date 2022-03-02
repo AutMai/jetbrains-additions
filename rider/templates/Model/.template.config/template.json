@@ -1,0 +1,25 @@
+{
+  "author": "Sebastian Huber",
+  "name": "Model",
+  "description": "Model",
+  "identity": "Model.1.0",
+  "shortName": "Model",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "Model",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0"
+        }
+      ],
+      "defaultValue": "net6.0"
+    }
+  }
+}

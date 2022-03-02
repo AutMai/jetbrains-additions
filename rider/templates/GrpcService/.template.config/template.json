@@ -1,14 +1,14 @@
 {
   "author": "Sebastian Huber",
-  "name": "BlazorApp",
-  "description": "View, Domain and Model",
-  "identity": "BlazorApp.1.0",
-  "shortName": "BlazorApp",
+  "name": "GrpcService",
+  "description": "GrpcService",
+  "identity": "GrpcService.1.0",
+  "shortName": "GrpcService",
   "tags": {
     "language": "C#",
     "type": "solution"
   },
-  "sourceName": "BlazorAppr",
+  "sourceName": "GrpcService",
   "symbols": {
     "Framework": {
       "type": "parameter",
