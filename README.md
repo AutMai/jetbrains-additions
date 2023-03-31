@@ -23,5 +23,10 @@ Contains useful additions/tools for jetbrains IDEs (rider, ...)
 ## Live Templates
 
 #### Datagrip Example:
+Installer Script (Bat Script):
+- run `install_mongo_templates_datagrip.bat`
+- Restart Datagrip if they don't show up
+
+Manual Installation:
 - Put the .xml file in `%appdata%\JetBrains\Datagrip202x.x\templates` (create folder if it doesn't exist)
-- Restart Datagrip
+- Restart Datagrip if they don't show up
